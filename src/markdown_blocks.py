@@ -72,9 +72,6 @@ def block_to_html_node(block):
             return olist_to_html_node(block)
         case _:
             raise ValueError("invalid block type")
-                
-                # uzupełnij kejsy f-cjami pomocniczymi
-
 
 def text_to_children(text):
     children = []

@@ -41,7 +41,7 @@ class TestTextToHTML(unittest.TestCase):
         html_node = text_node_to_html_node(node)
         self.assertEqual(html_node.tag, "img")
         self.assertEqual(html_node.value, "")
-        self.assertEqual(html_node.props, {"href": "https://www.boot.dev", "alt": "This is alt text"})
+        self.assertEqual(html_node.props, {"src": "https://www.boot.dev", "alt": "This is alt text"})
 
     def test_invalid_text_type(self):
         node = TextNode("Invalid type test", "NOT_A_VALID_TYPE")
